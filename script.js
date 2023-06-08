@@ -18,12 +18,8 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
-	let count= 0
-	for (let i of library) {
-		
-		if(library[i].readingStatus ) count++;
-	}
-	return count;
+	let x = library.filter(v=>v.readingStatus)
+	return x.length;
 };
 
 // Do not change the code below
